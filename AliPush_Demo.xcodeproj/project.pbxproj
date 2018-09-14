@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3545F6DB07E8FF890A04678B /* Pods_AliPush_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA85E307BC2948856D7F5055 /* Pods_AliPush_Demo.framework */; };
 		6B97D1D9214A5A9B00E51A23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97D1D8214A5A9B00E51A23 /* AppDelegate.m */; };
 		6B97D1DC214A5A9B00E51A23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97D1DB214A5A9B00E51A23 /* ViewController.m */; };
 		6B97D1DF214A5A9B00E51A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B97D1DD214A5A9B00E51A23 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		6B97D1E7214A5A9D00E51A23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97D1E6214A5A9D00E51A23 /* main.m */; };
 		6B97D1F1214A5A9D00E51A23 /* AliPush_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97D1F0214A5A9D00E51A23 /* AliPush_DemoTests.m */; };
 		6B97D1FC214A5A9D00E51A23 /* AliPush_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97D1FB214A5A9D00E51A23 /* AliPush_DemoUITests.m */; };
+		6B97D214214B609F00E51A23 /* AliyunEmasServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B97D213214B609F00E51A23 /* AliyunEmasServices-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B6FD4F7214B6895008E81D7 /* AliPush_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AliPush_Demo.entitlements; sourceTree = "<group>"; };
 		6B97D1D4214A5A9B00E51A23 /* AliPush_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliPush_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B97D1D7214A5A9B00E51A23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B97D1D8214A5A9B00E51A23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,10 @@
 		6B97D1F7214A5A9D00E51A23 /* AliPush_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliPush_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B97D1FB214A5A9D00E51A23 /* AliPush_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPush_DemoUITests.m; sourceTree = "<group>"; };
 		6B97D1FD214A5A9D00E51A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B97D213214B609F00E51A23 /* AliyunEmasServices-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AliyunEmasServices-Info.plist"; sourceTree = "<group>"; };
+		A9CB3924AC937134B2262498 /* Pods-AliPush_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPush_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliPush_Demo/Pods-AliPush_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		CA85E307BC2948856D7F5055 /* Pods_AliPush_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AliPush_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC877614A5BA70A86831F362 /* Pods-AliPush_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPush_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliPush_Demo/Pods-AliPush_Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3545F6DB07E8FF890A04678B /* Pods_AliPush_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +86,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34432B3F4F2C09557F47A6E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9CB3924AC937134B2262498 /* Pods-AliPush_Demo.debug.xcconfig */,
+				FC877614A5BA70A86831F362 /* Pods-AliPush_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B97D1CB214A5A9B00E51A23 = {
 			isa = PBXGroup;
 			children = (
+				6B97D213214B609F00E51A23 /* AliyunEmasServices-Info.plist */,
+				6B97D209214B47B300E51A23 /* aliPushFramework */,
 				6B97D1D6214A5A9B00E51A23 /* AliPush_Demo */,
 				6B97D1EF214A5A9D00E51A23 /* AliPush_DemoTests */,
 				6B97D1FA214A5A9D00E51A23 /* AliPush_DemoUITests */,
 				6B97D1D5214A5A9B00E51A23 /* Products */,
+				34432B3F4F2C09557F47A6E3 /* Pods */,
+				78031AC7D2AAF49DEE9059F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +122,7 @@
 		6B97D1D6214A5A9B00E51A23 /* AliPush_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				6B6FD4F7214B6895008E81D7 /* AliPush_Demo.entitlements */,
 				6B97D1D7214A5A9B00E51A23 /* AppDelegate.h */,
 				6B97D1D8214A5A9B00E51A23 /* AppDelegate.m */,
 				6B97D1DA214A5A9B00E51A23 /* ViewController.h */,
@@ -132,6 +154,21 @@
 			path = AliPush_DemoUITests;
 			sourceTree = "<group>";
 		};
+		6B97D209214B47B300E51A23 /* aliPushFramework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = aliPushFramework;
+			sourceTree = "<group>";
+		};
+		78031AC7D2AAF49DEE9059F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA85E307BC2948856D7F5055 /* Pods_AliPush_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B97D200214A5A9D00E51A23 /* Build configuration list for PBXNativeTarget "AliPush_Demo" */;
 			buildPhases = (
+				8BC8E34A7C1EC496198ACF6E /* [CP] Check Pods Manifest.lock */,
 				6B97D1D0214A5A9B00E51A23 /* Sources */,
 				6B97D1D1214A5A9B00E51A23 /* Frameworks */,
 				6B97D1D2214A5A9B00E51A23 /* Resources */,
@@ -199,6 +237,14 @@
 				TargetAttributes = {
 					6B97D1D3214A5A9B00E51A23 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					6B97D1EB214A5A9D00E51A23 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -235,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B97D214214B609F00E51A23 /* AliyunEmasServices-Info.plist in Resources */,
 				6B97D1E4214A5A9D00E51A23 /* LaunchScreen.storyboard in Resources */,
 				6B97D1E1214A5A9D00E51A23 /* Assets.xcassets in Resources */,
 				6B97D1DF214A5A9B00E51A23 /* Main.storyboard in Resources */,
@@ -256,6 +303,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC8E34A7C1EC496198ACF6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AliPush_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B97D1D0214A5A9B00E51A23 /* Sources */ = {
@@ -431,15 +499,23 @@
 		};
 		6B97D201214A5A9D00E51A23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CB3924AC937134B2262498 /* Pods-AliPush_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AliPush_Demo/AliPush_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DGVJJ53UK4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aliPushFramework",
+				);
 				INFOPLIST_FILE = AliPush_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "d.AliPush-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imobpay.appOpt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,15 +523,23 @@
 		};
 		6B97D202214A5A9D00E51A23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC877614A5BA70A86831F362 /* Pods-AliPush_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AliPush_Demo/AliPush_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DGVJJ53UK4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aliPushFramework",
+				);
 				INFOPLIST_FILE = AliPush_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "d.AliPush-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imobpay.appOpt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
