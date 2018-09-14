@@ -233,14 +233,13 @@ static NSString *const testAppSecret = @"bfd025c763824e7e4bb1d94837dbcaf9";
 
 #pragma mark SDK Init
 - (void)initCloudPush {
-    // 正式上线建议关闭
-    [CloudPushSDK turnOnDebug];
-    // SDK初始化
+    
+    [CloudPushSDK turnOnDebug]; // 正式上线建议关闭，，日志开关
     [CloudPushSDK asyncInit:testAppKey appSecret:testAppSecret callback:^(CloudPushCallbackResult *res) {
         if (res.success) {
-            NSLog(@"\n ====== Push SDK init success, deviceId: %@.", [CloudPushSDK getDeviceId]);
+            NSLog(@"240 ---- Push SDK init success, deviceId: %@.", [CloudPushSDK getDeviceId]);
         } else {
-            NSLog(@"\n ====== Push SDK init failed, error: %@", res.error);
+            NSLog(@"242 ---- Push SDK init failed, error: %@", res.error);
         }
     }];
 }
@@ -261,7 +260,7 @@ static NSString *const testAppSecret = @"bfd025c763824e7e4bb1d94837dbcaf9";
  *   @param notification
  */
 - (void)onChannelOpened:(NSNotification *)notification {
-    NSLog(@"284------- ====== 温馨提示,消息通道建立成功,该通道创建成功表示‘在线’，可以接收到推送的消息");
+    NSLog(@"284-------温馨提示,消息通道建立成功,该通道创建成功表示‘在线’，可以接收到推送的消息");
 }
 
 
@@ -318,25 +317,25 @@ static NSString *const testAppSecret = @"bfd025c763824e7e4bb1d94837dbcaf9";
     
     // 点击通知打开
     if ([userAction isEqualToString:UNNotificationDefaultActionIdentifier]) {
-        NSLog(@"\n ====== User opened the notification.");
+        NSLog(@"320-------  User opened the notification.");
         // 处理iOS 10通知，并上报通知打开回执
         [self handleiOS10Notification:response.notification];
     }
     // 通知dismiss，category 创建时传入 UNNotificationCategoryOptionCustomDismissAction 才可以触发
     if ([userAction isEqualToString:UNNotificationDismissActionIdentifier]) {
-        NSLog(@"\n ====== User dismissed the notification.");
+        NSLog(@"326--------  User dismissed the notification.");
     }
     NSString *customAction1 = @"action1";
     NSString *customAction2 = @"action2";
     
     // 点击用户自定义Action1
     if ([userAction isEqualToString:customAction1]) {
-        NSLog(@"User custom action1.");
+        NSLog(@"333---------User custom action1.");
     }
     
     // 点击用户自定义Action2
     if ([userAction isEqualToString:customAction2]) {
-        NSLog(@"User custom action2.");
+        NSLog(@"338--------User custom action2.");
     }
     completionHandler();
 }
@@ -415,7 +414,7 @@ static NSString *const testAppSecret = @"bfd025c763824e7e4bb1d94837dbcaf9";
     // 通知打开回执上报
     [CloudPushSDK sendNotificationAck:userInfo];
     
-    NSLog(@"\n ====== App 处于前台时收到通知 (iOS 10+ ) Notification, == date: %@, == title: %@, == subtitle: %@, == body: %@, == badge: %d, == extras: %@.", noticeDate, title, subtitle, body, badge, extras);
+    NSLog(@"417------------ ====== App 处于前台时收到通知 (iOS 10+ ) Notification, == date: %@, == title: %@, == subtitle: %@, == body: %@, == badge: %d, == extras: %@.", noticeDate, title, subtitle, body, badge, extras);
 }
 
 /* 同步通知角标数到服务端 */
@@ -517,10 +516,8 @@ static NSString *const testAppSecret = @"bfd025c763824e7e4bb1d94837dbcaf9";
     if (application.applicationIconBadgeNumber != 0) {
         
         // 发起请求获取未读消息的内容
-        
         // 点击 icon 从后台进入应用时, 对 badge 的处理
         application.applicationIconBadgeNumber = 0;
-        
         // 清除导航栏未读的通知
         [_notificationCenter removeAllDeliveredNotifications];
         
